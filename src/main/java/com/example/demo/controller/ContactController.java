@@ -41,7 +41,7 @@ public class ContactController {
     @PostMapping("/contact/save")
     public String save(@Valid Contact contact, BindingResult result, RedirectAttributes redirect) {
         if (result.hasErrors()) {
-            return "form";
+            return "form";;
         }
         contactService.save(contact);
         redirect.addFlashAttribute("success", "Saved contact successfully!");
