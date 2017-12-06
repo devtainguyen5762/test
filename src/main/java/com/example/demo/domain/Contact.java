@@ -30,8 +30,8 @@ public class Contact implements Serializable {
 	@Column(name = "email")
 	private String email;
 
-//	@Column(name = "phone")
-//	private String phone;
+@Column(name = "phone")
+private String phone;
 
 	public Contact() {
 		super();
